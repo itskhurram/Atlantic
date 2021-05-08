@@ -1,7 +1,7 @@
 ﻿using Atlantic.MasterData.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Atlantic.MasterData.Data {
+namespace Atlantic.MasterData.Data.Context {
     public class MasterDataContext : DbContext {
         public MasterDataContext(DbContextOptions options) : base(options) {
 
