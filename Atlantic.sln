@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31220.234
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C52A0EA8-E77E-4C09-9961-2C67D60921C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{0A4C36FD-5914-4C05-B178-6C19D86436CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{7F3E73FC-81CA-4E86-8BD4-DD18615222F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{21832B89-4B46-4931-B210-15AF6CA6E42B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{11AF20E8-EB14-498E-BCDB-5F25273B90F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Domain.Core", "src\Domain\Atlantic.Domain.Core\Atlantic.Domain.Core.csproj", "{C006F59A-4DCE-4495-91FF-D80321D1BCC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Infrastructure.Bus", "src\Infrastructure\Atlantic.Infrastructure.Bus\Atlantic.Infrastructure.Bus.csproj", "{FEA98EEE-36BB-4AA6-9048-9C43EDB905E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Infrastructure.IOC", "src\Infrastructure\Atlantic.Infrastructure.IOC\Atlantic.Infrastructure.IOC.csproj", "{9C09B781-3890-457A-BC6E-656FB75EF800}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C006F59A-4DCE-4495-91FF-D80321D1BCC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C006F59A-4DCE-4495-91FF-D80321D1BCC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C006F59A-4DCE-4495-91FF-D80321D1BCC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C006F59A-4DCE-4495-91FF-D80321D1BCC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEA98EEE-36BB-4AA6-9048-9C43EDB905E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA98EEE-36BB-4AA6-9048-9C43EDB905E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA98EEE-36BB-4AA6-9048-9C43EDB905E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA98EEE-36BB-4AA6-9048-9C43EDB905E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C09B781-3890-457A-BC6E-656FB75EF800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C09B781-3890-457A-BC6E-656FB75EF800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C09B781-3890-457A-BC6E-656FB75EF800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C09B781-3890-457A-BC6E-656FB75EF800}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A4C36FD-5914-4C05-B178-6C19D86436CB} = {C52A0EA8-E77E-4C09-9961-2C67D60921C7}
+		{7F3E73FC-81CA-4E86-8BD4-DD18615222F7} = {C52A0EA8-E77E-4C09-9961-2C67D60921C7}
+		{21832B89-4B46-4931-B210-15AF6CA6E42B} = {C52A0EA8-E77E-4C09-9961-2C67D60921C7}
+		{11AF20E8-EB14-498E-BCDB-5F25273B90F9} = {C52A0EA8-E77E-4C09-9961-2C67D60921C7}
+		{C006F59A-4DCE-4495-91FF-D80321D1BCC9} = {0A4C36FD-5914-4C05-B178-6C19D86436CB}
+		{FEA98EEE-36BB-4AA6-9048-9C43EDB905E6} = {21832B89-4B46-4931-B210-15AF6CA6E42B}
+		{9C09B781-3890-457A-BC6E-656FB75EF800} = {21832B89-4B46-4931-B210-15AF6CA6E42B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {93E4E1FF-1D2F-4024-BD67-1E90F2DE9A1A}
+	EndGlobalSection
+EndGlobal
