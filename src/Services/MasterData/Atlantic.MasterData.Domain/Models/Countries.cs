@@ -26,5 +26,9 @@ namespace Atlantic.MasterData.Domain.Models {
         public short Flag { get; set; }
         public string WikiDataId { get; set; }
         public ICollection<States> States { get; set; }
+        public ICollection<Cities> Cities { get; set; }
     }
+
 }
+
+

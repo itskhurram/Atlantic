@@ -12,5 +12,10 @@ namespace Atlantic.MasterData.Domain.Models {
         public string WikiDataId { get; set; }
         public string CountryCode { get; set; }
         public string StateCode { get; set; }
+        public int StatesId { get; set; }
+        public States States { get; set; }
+        public int CountriesId { get; set; }
+        public Countries Countries { get; set; }
+
     }
 }
