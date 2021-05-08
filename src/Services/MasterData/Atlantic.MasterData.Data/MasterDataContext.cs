@@ -1,4 +1,4 @@
-﻿using Atlantic.MasterData.Domain;
+﻿using Atlantic.MasterData.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Atlantic.MasterData.Data {
