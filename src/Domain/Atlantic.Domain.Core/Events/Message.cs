@@ -1,0 +1,8 @@
+﻿namespace Atlantic.Domain.Core.Events {
+    public abstract class Message : MediatR.IRequest<bool> {
+        public string MessageType { get; protected set; }
+        protected Message() {
+            MessageType = GetType().Name;
+        }
+    }
+}
