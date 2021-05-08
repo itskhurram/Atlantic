@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Atlantic.MasterData.Data\Atlantic.MasterData.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>
