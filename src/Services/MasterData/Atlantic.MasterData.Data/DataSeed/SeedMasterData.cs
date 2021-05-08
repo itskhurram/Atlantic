@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Atlantic.MasterData.Data.DataSeed {
     public class SeedMasterData {
-
+        /*
         public static async Task SeedData(MasterDataContext masterDataContext) {
 
             if (await masterDataContext.Countries.AnyAsync()) return;
@@ -168,5 +168,7 @@ namespace Atlantic.MasterData.Data.DataSeed {
             public string wikiDataId { get; set; }
         }
         #endregion
+
+        */
     }
 }
