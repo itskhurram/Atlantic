@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Atlantic.MasterData.Domain.Models {
     public class States {
         public int Id { get; set; }
@@ -12,5 +14,7 @@ namespace Atlantic.MasterData.Domain.Models {
         public short Flag { get; set; }
         public string WikiDataId { get; set; }
         public string CountryCode { get; set; }
+        public ICollection<Cities> Cities { get; set; }
+
     }
 }
