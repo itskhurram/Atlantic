@@ -14,10 +14,19 @@ namespace Atlantic.MasterData.Data.DataSeed {
         public static async Task SeedData(MasterDataContext masterDataContext) {
 
             if (await masterDataContext.Countries.AnyAsync()) return;
+            if (await masterDataContext.States.AnyAsync()) return;
+            if (await masterDataContext.Cities.AnyAsync()) return;
             var countriesJsonData = await System.IO.File.ReadAllTextAsync("Data/countries.json");
             var countries = JsonSerializer.Deserialize<List<Tempcountries>>(countriesJsonData);
+
+            var statesJsonData = await System.IO.File.ReadAllTextAsync("Data/states.json");
+            var states = JsonSerializer.Deserialize<List<Tempstates>>(statesJsonData);
+
+            var CityJsonData = await System.IO.File.ReadAllTextAsync("Data/cities.json");
+            var cities = JsonSerializer.Deserialize<List<Tempcities>>(CityJsonData);
+
             foreach (var country in countries) {
-                masterDataContext.Countries.Add(new Countries() { 
+                masterDataContext.Countries.Add(new Countries() {
                     Name = country.name,
                     ISO3 = country.iso3,
                     ISO2 = country.iso2,
@@ -35,19 +44,14 @@ namespace Atlantic.MasterData.Data.DataSeed {
                     Longitude = Convert.ToDecimal(country.longitude),
                     Emoji = country.emoji,
                     EmojiU = country.emojiU,
-                    CreatedDate = Convert.ToDateTime( country.created_at),
+                    CreatedDate = Convert.ToDateTime(country.created_at),
                     UpdatedDate = Convert.ToDateTime(country.updated_at),
                     Flag = country.flag,
                     WikiDataId = country.wikiDataId,
+                    //States = getStatesByCountryCode(country.iso3)
                 }); 
             }
-
-            await masterDataContext.SaveChangesAsync();
-
-            if (await masterDataContext.States.AnyAsync()) return;
-
-            var statesJsonData = await System.IO.File.ReadAllTextAsync("Data/states.json");
-            var states = JsonSerializer.Deserialize<List<Tempstates>>(statesJsonData);
+           
             foreach (var state in states) {
                 masterDataContext.States.Add(new States() {
                     Name = state.name,
@@ -63,10 +67,7 @@ namespace Atlantic.MasterData.Data.DataSeed {
                     WikiDataId = state.wikiDataId,
                 });
             }
-            await masterDataContext.SaveChangesAsync();
-
-            var CityJsonData = await System.IO.File.ReadAllTextAsync("Data/cities.json");
-            var cities = JsonSerializer.Deserialize<List<Tempcities>>(CityJsonData);
+            
             foreach (var city in cities) {
                 masterDataContext.Cities.Add(new Cities() {
                     Name = city.name,
@@ -82,7 +83,7 @@ namespace Atlantic.MasterData.Data.DataSeed {
                     WikiDataId = city.wikiDataId,
                 });
             }
-
+           
             await masterDataContext.SaveChangesAsync();
 
 
