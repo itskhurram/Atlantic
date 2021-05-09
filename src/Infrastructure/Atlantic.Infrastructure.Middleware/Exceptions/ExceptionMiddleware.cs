@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Atlantic.Infrastructure.Middleware.Exceptions {
     public class ExceptionMiddleware {
-        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware>,IHostEnvironment  environment) {
+        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger,IHostEnvironment  environment) {
 
         }
     }
