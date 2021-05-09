@@ -9,7 +9,7 @@ using Atlantic.MasterData.Domain.Models;
 
 using Microsoft.EntityFrameworkCore;
 namespace Atlantic.MasterData.Data.Repositories {
-    class WorldInformationRepository : IWorldInformationRepository {
+    public class WorldInformationRepository : IWorldInformationRepository {
         private readonly MasterDataContext _masterDataContext;
         public WorldInformationRepository(MasterDataContext masterDataContext) {
             _masterDataContext = masterDataContext;

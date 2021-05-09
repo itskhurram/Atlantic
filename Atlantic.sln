@@ -13,11 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{11AF20E8-EB14-498E-BCDB-5F25273B90F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Domain.Core", "src\Domain\Atlantic.Domain.Core\Atlantic.Domain.Core.csproj", "{C006F59A-4DCE-4495-91FF-D80321D1BCC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.Domain.Core", "src\Domain\Atlantic.Domain.Core\Atlantic.Domain.Core.csproj", "{C006F59A-4DCE-4495-91FF-D80321D1BCC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Infrastructure.Bus", "src\Infrastructure\Atlantic.Infrastructure.Bus\Atlantic.Infrastructure.Bus.csproj", "{FEA98EEE-36BB-4AA6-9048-9C43EDB905E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.Infrastructure.Bus", "src\Infrastructure\Atlantic.Infrastructure.Bus\Atlantic.Infrastructure.Bus.csproj", "{FEA98EEE-36BB-4AA6-9048-9C43EDB905E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Infrastructure.IOC", "src\Infrastructure\Atlantic.Infrastructure.IOC\Atlantic.Infrastructure.IOC.csproj", "{9C09B781-3890-457A-BC6E-656FB75EF800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.Infrastructure.IOC", "src\Infrastructure\Atlantic.Infrastructure.IOC\Atlantic.Infrastructure.IOC.csproj", "{9C09B781-3890-457A-BC6E-656FB75EF800}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MasterData", "MasterData", "{E811C408-73B4-4BA3-88E2-C5259B947835}"
 EndProject
@@ -27,23 +27,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Membership", "Membership", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{4E476EE0-6C3C-4137-BABA-23D56A736722}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.MasterData.Domain", "src\Services\MasterData\Atlantic.MasterData.Domain\Atlantic.MasterData.Domain.csproj", "{CC6D95B8-67A6-4334-A451-90175EB3C71F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.MasterData.Domain", "src\Services\MasterData\Atlantic.MasterData.Domain\Atlantic.MasterData.Domain.csproj", "{CC6D95B8-67A6-4334-A451-90175EB3C71F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.MasterData.Data", "src\Services\MasterData\Atlantic.MasterData.Data\Atlantic.MasterData.Data.csproj", "{0EB51317-67CC-44A1-99F2-825BDBE63D1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.MasterData.Data", "src\Services\MasterData\Atlantic.MasterData.Data\Atlantic.MasterData.Data.csproj", "{0EB51317-67CC-44A1-99F2-825BDBE63D1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.MasterData.Application", "src\Services\MasterData\Atlantic.MasterData.Application\Atlantic.MasterData.Application.csproj", "{AF727978-3049-4CD4-A024-E171C349D3DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.MasterData.Application", "src\Services\MasterData\Atlantic.MasterData.Application\Atlantic.MasterData.Application.csproj", "{AF727978-3049-4CD4-A024-E171C349D3DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Registration.Domain", "src\Services\Registration\Atlantic.Registration.Domain\Atlantic.Registration.Domain.csproj", "{9BBCC111-93F5-4FFA-8B34-DD5CC76B02DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.Registration.Domain", "src\Services\Registration\Atlantic.Registration.Domain\Atlantic.Registration.Domain.csproj", "{9BBCC111-93F5-4FFA-8B34-DD5CC76B02DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Registration.Data", "src\Services\Registration\Atlantic.Registration.Data\Atlantic.Registration.Data.csproj", "{37D94CB3-0227-4DEE-8F56-6FEF89CCE763}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.Registration.Data", "src\Services\Registration\Atlantic.Registration.Data\Atlantic.Registration.Data.csproj", "{37D94CB3-0227-4DEE-8F56-6FEF89CCE763}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Registration.Application", "src\Services\Registration\Atlantic.Registration.Application\Atlantic.Registration.Application.csproj", "{94641013-4BC4-4122-AF50-908DCDC2F885}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.Registration.Application", "src\Services\Registration\Atlantic.Registration.Application\Atlantic.Registration.Application.csproj", "{94641013-4BC4-4122-AF50-908DCDC2F885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Registration.Infrastructure", "src\Services\Registration\Atlantic.Registration.Infrastructure\Atlantic.Registration.Infrastructure.csproj", "{CC273B97-12F0-4865-87EF-9E85AE5B44B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.Registration.Infrastructure", "src\Services\Registration\Atlantic.Registration.Infrastructure\Atlantic.Registration.Infrastructure.csproj", "{CC273B97-12F0-4865-87EF-9E85AE5B44B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Registration.API", "src\Services\Registration\Atlantic.Registration.API\Atlantic.Registration.API.csproj", "{6D8EBEC1-7F3C-4347-BA4E-6ED30FB84997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.Registration.API", "src\Services\Registration\Atlantic.Registration.API\Atlantic.Registration.API.csproj", "{6D8EBEC1-7F3C-4347-BA4E-6ED30FB84997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.MasterData.API", "src\Services\MasterData\Atlantic.MasterData.API\Atlantic.MasterData.API.csproj", "{FEE9F06D-C3C3-4147-AB3A-1DFA50BE7C6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.MasterData.API", "src\Services\MasterData\Atlantic.MasterData.API\Atlantic.MasterData.API.csproj", "{FEE9F06D-C3C3-4147-AB3A-1DFA50BE7C6E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
