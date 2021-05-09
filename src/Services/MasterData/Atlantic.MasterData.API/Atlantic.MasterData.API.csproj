@@ -18,8 +18,4 @@
     <ProjectReference Include="..\Atlantic.MasterData.Infrastructure\Atlantic.MasterData.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Errors\" />
-  </ItemGroup>
-
 </Project>

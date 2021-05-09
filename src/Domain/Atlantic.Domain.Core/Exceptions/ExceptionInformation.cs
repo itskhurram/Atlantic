@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Atlantic.Domain.Core.Exceptions {
     public class ExceptionInformation {
-        public ExceptionInformation(int statusCode, string message, string details) {
+        public ExceptionInformation(int statusCode, string message = null, string details= null) {
             StatusCode = statusCode;
             Message = message;
             Details = details;
