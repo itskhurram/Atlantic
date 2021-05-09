@@ -10,7 +10,7 @@ namespace Atlantic.MasterData.Data.Repositories {
     public class BusinessServicesRepository : IBusinessServicesRepository {
         private readonly MasterDataContext _masterDataContext;
         private readonly ILogger _logger;
-        public BusinessServicesRepository(MasterDataContext masterDataContext,ILogger logger) {
+        public BusinessServicesRepository(MasterDataContext masterDataContext, ILogger logger) {
             _masterDataContext = masterDataContext;
             _logger = logger;
         }

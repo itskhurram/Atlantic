@@ -1,3 +1,4 @@
+using Atlantic.Infrastructure.IOC;
 using Atlantic.MasterData.Data.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,10 @@ namespace Atlantic.MasterData.API {
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Atlantic.MasterData.API", Version = "v1" });
             });
+            RegisterServices(services);
+        }
+        private void RegisterServices(IServiceCollection services) {
+            DependencyContainer.RegisterServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

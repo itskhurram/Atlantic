@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\Atlantic.Domain.Core\Atlantic.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Services\MasterData\Atlantic.MasterData.Application\Atlantic.MasterData.Application.csproj" />
+    <ProjectReference Include="..\..\Services\MasterData\Atlantic.MasterData.Data\Atlantic.MasterData.Data.csproj" />
     <ProjectReference Include="..\Atlantic.Infrastructure.Bus\Atlantic.Infrastructure.Bus.csproj" />
   </ItemGroup>
 
