@@ -6,7 +6,6 @@ namespace Atlantic.MasterData.Domain.Models {
         public int Id { get; set; }
         public string Name { get; set; }
         public short Flag { get; set; }
-        public string CountryCode { get; set; }
         public int CountriesId { get; set; }
         public Countries Countries { get; set; }
         public ICollection<Cities> Cities { get; set; }
