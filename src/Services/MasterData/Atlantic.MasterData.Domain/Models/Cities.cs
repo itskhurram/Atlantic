@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Atlantic.MasterData.Domain.Models {
+﻿namespace Atlantic.MasterData.Domain.Models {
     public class Cities {
         public int Id { get; set; }
         public string Name { get; set; }

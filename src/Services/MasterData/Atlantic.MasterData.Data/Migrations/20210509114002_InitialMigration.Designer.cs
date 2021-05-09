@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Atlantic.MasterData.Data.Migrations
 {
     [DbContext(typeof(MasterDataContext))]
-    [Migration("20210509103640_InitialMigration")]
+    [Migration("20210509114002_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
+﻿using System.Collections.Generic;
 namespace Atlantic.MasterData.Domain.Models {
     public class Countries {
         public int Id { get; set; }

@@ -1,10 +1,8 @@
 ﻿using Atlantic.MasterData.Domain.Models;
 using Microsoft.EntityFrameworkCore;
-
 namespace Atlantic.MasterData.Data.Context {
     public class MasterDataContext : DbContext {
         public MasterDataContext(DbContextOptions options) : base(options) {
-
         }
         public DbSet<Countries> Countries { get; set; }
         public DbSet<States> States { get; set; }
