@@ -47,6 +47,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Atlantic.MasterData.API", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.Infrastructure.Middleware", "src\Infrastructure\Atlantic.Infrastructure.Middleware\Atlantic.Infrastructure.Middleware.csproj", "{FEEC2A68-523A-4E10-BE37-CA48FA68BBE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atlantic.MasterData.Infrastructure", "src\Services\MasterData\Atlantic.MasterData.Infrastructure\Atlantic.MasterData.Infrastructure.csproj", "{383918EC-630E-4B9C-AB18-9C68A5F9B888}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{FEEC2A68-523A-4E10-BE37-CA48FA68BBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEEC2A68-523A-4E10-BE37-CA48FA68BBE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEEC2A68-523A-4E10-BE37-CA48FA68BBE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383918EC-630E-4B9C-AB18-9C68A5F9B888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383918EC-630E-4B9C-AB18-9C68A5F9B888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383918EC-630E-4B9C-AB18-9C68A5F9B888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383918EC-630E-4B9C-AB18-9C68A5F9B888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +137,7 @@ Global
 		{6D8EBEC1-7F3C-4347-BA4E-6ED30FB84997} = {9CB46912-6044-4D20-8AAA-74FBAD243FCF}
 		{FEE9F06D-C3C3-4147-AB3A-1DFA50BE7C6E} = {E811C408-73B4-4BA3-88E2-C5259B947835}
 		{FEEC2A68-523A-4E10-BE37-CA48FA68BBE2} = {21832B89-4B46-4931-B210-15AF6CA6E42B}
+		{383918EC-630E-4B9C-AB18-9C68A5F9B888} = {E811C408-73B4-4BA3-88E2-C5259B947835}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {93E4E1FF-1D2F-4024-BD67-1E90F2DE9A1A}

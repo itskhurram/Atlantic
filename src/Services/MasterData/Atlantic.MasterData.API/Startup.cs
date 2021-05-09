@@ -1,6 +1,5 @@
-using Atlantic.Infrastructure.IOC;
-using Atlantic.Infrastructure.IOC.Container;
-using Atlantic.Infrastructure.IOC.Extensions;
+using Atlantic.MasterData.Infrastructure.Container;
+using Atlantic.MasterData.Infrastructure.Extensions;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;

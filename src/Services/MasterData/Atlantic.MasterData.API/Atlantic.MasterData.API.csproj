@@ -13,9 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Infrastructure\Atlantic.Infrastructure.IOC\Atlantic.Infrastructure.IOC.csproj" />
     <ProjectReference Include="..\Atlantic.MasterData.Application\Atlantic.MasterData.Application.csproj" />
     <ProjectReference Include="..\Atlantic.MasterData.Data\Atlantic.MasterData.Data.csproj" />
+    <ProjectReference Include="..\Atlantic.MasterData.Infrastructure\Atlantic.MasterData.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
