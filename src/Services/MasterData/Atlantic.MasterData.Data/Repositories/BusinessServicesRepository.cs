@@ -9,17 +9,14 @@ using System.Threading.Tasks;
 namespace Atlantic.MasterData.Data.Repositories {
     public class BusinessServicesRepository : IBusinessServicesRepository {
         private readonly MasterDataContext _masterDataContext;
-        private readonly ILogger _logger;
-        public BusinessServicesRepository(MasterDataContext masterDataContext, ILogger logger) {
+        public BusinessServicesRepository(MasterDataContext masterDataContext) {
             _masterDataContext = masterDataContext;
-            _logger = logger;
         }
         public async Task<IEnumerable<BusinessServices>> GetBusinessServices() {
             try {
                 return await _masterDataContext.BusinessServices.ToListAsync();
             }
-            catch (Exception exception) {
-                _logger.LogError(exception, "Error Occured during reading business services.");
+            catch (Exception) {
                 return null;
             }
         }

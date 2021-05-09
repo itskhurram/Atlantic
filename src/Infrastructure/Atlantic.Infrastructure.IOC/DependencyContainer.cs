@@ -1,12 +1,8 @@
-﻿using Atlantic.Domain.Core.Bus;
-using Atlantic.Infrastructure.Bus;
-using Atlantic.MasterData.Application.Interfaces;
+﻿using Atlantic.MasterData.Application.Interfaces;
 using Atlantic.MasterData.Application.Services;
 using Atlantic.MasterData.Data.Context;
 using Atlantic.MasterData.Data.Repositories;
 using Atlantic.MasterData.Domain.Interfaces;
-
-using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 namespace Atlantic.Infrastructure.IOC {
     public class DependencyContainer {
@@ -23,23 +19,18 @@ namespace Atlantic.Infrastructure.IOC {
             ////services.AddTransient<TransferEventHandler>();
             ////services.AddTransient<IEventHandler<TransferCreatedEvent>, TransferEventHandler>();
             ////Domain Banking Commands
-            ////services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>(); 
+            ////services.AddTransient<IRequestHandler<CreateTransferCommand, bool>, TransferCommandHandler>();
             #endregion
-
             MasterServicesRegistion(services);
         }
-
         private static void MasterServicesRegistion(IServiceCollection services) {
-
             #region Application Services
             services.AddTransient<IBusinessServicesService, BusinessServicesService>();
             #endregion
-
             #region Data Repositories
             services.AddTransient<IBusinessServicesRepository, BusinessServicesRepository>();
             services.AddTransient<MasterDataContext>();
             #endregion
-
         }
     }
 }
