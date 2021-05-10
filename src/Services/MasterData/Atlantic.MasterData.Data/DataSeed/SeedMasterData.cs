@@ -8,13 +8,13 @@ namespace Atlantic.MasterData.Data.DataSeed {
             if (await masterDataContext.States.AnyAsync()) return;
             if (await masterDataContext.Cities.AnyAsync()) return;
             if (await masterDataContext.BusinessServices.AnyAsync()) return;
-            var countriesInsertQuery = await System.IO.File.ReadAllTextAsync("Data/CountriesDataInsertScript.sql");
+            var countriesInsertQuery = await System.IO.File.ReadAllTextAsync("Data/Countries.sql");
             await masterDataContext.Database.ExecuteSqlRawAsync(countriesInsertQuery);
-            var statesInsertQuery = await System.IO.File.ReadAllTextAsync("Data/StatesDataInsertScript.sql");
+            var statesInsertQuery = await System.IO.File.ReadAllTextAsync("Data/States.sql");
             await masterDataContext.Database.ExecuteSqlRawAsync(statesInsertQuery);
-            var CityInsertQueries = await System.IO.File.ReadAllTextAsync("Data/CitiesDataInsertScript.sql");
+            var CityInsertQueries = await System.IO.File.ReadAllTextAsync("Data/Cities.sql");
             await masterDataContext.Database.ExecuteSqlRawAsync(CityInsertQueries);
-            var businessServiceInsertQueries = await System.IO.File.ReadAllTextAsync("Data/BusinessServiceDataInsertScript.sql");
+            var businessServiceInsertQueries = await System.IO.File.ReadAllTextAsync("Data/BusinessService.sql");
             await masterDataContext.Database.ExecuteSqlRawAsync(businessServiceInsertQueries);
             await masterDataContext.SaveChangesAsync();
         }

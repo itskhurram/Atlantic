@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  atlantic.masterdata.api:
+    image: ${DOCKER_REGISTRY-}masterdataapi
+    build:
+      context: .
+      dockerfile: src/Services/MasterData/Atlantic.MasterData.API/Dockerfile

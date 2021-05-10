@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Domain\Atlantic.Domain.Core\Atlantic.Domain.Core.csproj" />
     <ProjectReference Include="..\Atlantic.MasterData.Application\Atlantic.MasterData.Application.csproj" />
     <ProjectReference Include="..\Atlantic.MasterData.Data\Atlantic.MasterData.Data.csproj" />
   </ItemGroup>

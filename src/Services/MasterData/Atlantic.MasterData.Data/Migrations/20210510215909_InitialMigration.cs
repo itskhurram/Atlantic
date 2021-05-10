@@ -12,7 +12,7 @@ namespace Atlantic.MasterData.Data.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
                     Flag = table.Column<short>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
@@ -26,7 +26,7 @@ namespace Atlantic.MasterData.Data.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
                     Flag = table.Column<short>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
@@ -40,7 +40,7 @@ namespace Atlantic.MasterData.Data.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
                     Flag = table.Column<short>(type: "INTEGER", nullable: false),
                     CountriesId = table.Column<int>(type: "INTEGER", nullable: false)
                 },
@@ -61,7 +61,7 @@ namespace Atlantic.MasterData.Data.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
                     Flag = table.Column<short>(type: "INTEGER", nullable: false),
                     StatesId = table.Column<int>(type: "INTEGER", nullable: false),
                     CountriesId = table.Column<int>(type: "INTEGER", nullable: false)

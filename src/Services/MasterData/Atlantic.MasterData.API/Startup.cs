@@ -19,7 +19,7 @@ namespace Atlantic.MasterData.API {
             services.AddApplicationServices(_configuration);
             services.AddControllers();
             services.AddSwaggerGen(c => {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Atlantic.MasterData.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Atlantic MasterData API", Version = "v1" });
             });
             RegisterServices(services);
         }
@@ -30,9 +30,8 @@ namespace Atlantic.MasterData.API {
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env) {
             app.UseMiddleware<ExceptionMiddleware>();
             if (env.IsDevelopment()) {
-                //app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Atlantic.MasterData.API v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Atlantic MasterData API V1"));
             }
             app.UseHttpsRedirection();
             app.UseRouting();
