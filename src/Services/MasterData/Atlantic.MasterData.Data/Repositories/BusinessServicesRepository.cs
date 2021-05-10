@@ -13,12 +13,7 @@ namespace Atlantic.MasterData.Data.Repositories {
             _masterDataContext = masterDataContext;
         }
         public async Task<IEnumerable<BusinessServices>> GetBusinessServices() {
-            try {
-                return await _masterDataContext.BusinessServices.ToListAsync();
-            }
-            catch (Exception) {
-                return null;
-            }
+            return await _masterDataContext.BusinessServices.ToListAsync();
         }
     }
 }
