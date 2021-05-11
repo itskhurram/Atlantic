@@ -16,7 +16,7 @@ namespace Atlantic.MasterData.Data.Repositories {
             return await _masterDataContext.Countries.Where(country => country.Flag == 1).ToListAsync();
         }
         public async Task<IEnumerable<States>> GetStatesByCountryId(int CountryId) {
-            return await _masterDataContext.States.Where(state => state.Flag == 1 && state.CountriesId == 1).ToListAsync();
+            return await _masterDataContext.States.Where(state => state.Flag == 1 && state.CountriesId == CountryId).ToListAsync();
         }
         public async Task<IEnumerable<Cities>> GetCitiesByCountryStateId(int StateId, int CountryId) {
             return await _masterDataContext.Cities.Where(city => city.Flag == 1 &&

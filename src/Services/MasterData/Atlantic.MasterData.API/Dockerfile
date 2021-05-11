@@ -24,4 +24,5 @@ RUN dotnet publish "Atlantic.MasterData.API.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+#COPY --from=src/services/masterdata/atlantic.mastersata.api/data /app/publish/data .
 ENTRYPOINT ["dotnet", "Atlantic.MasterData.API.dll"]

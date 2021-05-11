@@ -1,3 +1,5 @@
+PRAGMA synchronous = OFF;
+BEGIN TRANSACTION;
 INSERT INTO BusinessServices (`Id`,`Name`,`Flag`) VALUES (1, 'Air Charter Company',1);
 INSERT INTO BusinessServices (`Id`,`Name`,`Flag`) VALUES (2, 'Air Forwarder',1);
 INSERT INTO BusinessServices (`Id`,`Name`,`Flag`) VALUES (3, 'Airline / Carrier',1);
@@ -28,3 +30,4 @@ INSERT INTO BusinessServices (`Id`,`Name`,`Flag`) VALUES (27, 'Insurance',1);
 INSERT INTO BusinessServices (`Id`,`Name`,`Flag`) VALUES (28, 'Media',1);
 INSERT INTO BusinessServices (`Id`,`Name`,`Flag`) VALUES (29, 'Government, Donor or NGO',1);
 INSERT INTO BusinessServices (`Id`,`Name`,`Flag`) VALUES (30, 'Others',1);
+COMMIT TRANSACTION;

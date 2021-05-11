@@ -5,7 +5,7 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=https://+:443;http://+:80
-      - ConnectionStrings:MasterDataDbConnection=Data source=MasterData-Development.db
+      - ConnectionStrings:MasterDataDbConnection=Data source=masterdata.db
     ports:
       - "8000:80"
       - "9000:443"
