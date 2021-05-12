@@ -12,5 +12,5 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
-      - ${APPDATA}/Data/:/root/Data/
+      #- ${APPDATA}/Data/:/root/Data/
       
