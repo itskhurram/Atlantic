@@ -249,4 +249,4 @@ INSERT INTO Countries (`Id`,`Name`,`Flag`) VALUES (247,'Zimbabwe',1);
 INSERT INTO Countries (`Id`,`Name`,`Flag`) VALUES (248,'Kosovo',1);
 INSERT INTO Countries (`Id`,`Name`,`Flag`) VALUES (249,'Curaçao',1);
 INSERT INTO Countries (`Id`,`Name`,`Flag`) VALUES (250,'Sint Maarten (Dutch part)',1);
-COMMIT;
+COMMIT TRANSACTION;

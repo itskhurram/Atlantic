@@ -1,4 +1,3 @@
-PRAGMA synchronous = OFF;
 BEGIN TRANSACTION;
 PRAGMA foreign_keys = OFF;
 INSERT INTO `States` (`Id`,`Name`,`Flag`,`CountriesId`) VALUES (1,'Southern Nations, Nationalities, and Peoples\'' Region',1,70);
@@ -4870,4 +4869,3 @@ INSERT INTO `States` (`Id`,`Name`,`Flag`,`CountriesId`) VALUES (4914,'In Guezzam
 INSERT INTO `States` (`Id`,`Name`,`Flag`,`CountriesId`) VALUES (4915,'Mureș County',1,181);
 PRAGMA foreign_keys = ON;
 COMMIT TRANSACTION;
-PRAGMA synchronous = OFF;

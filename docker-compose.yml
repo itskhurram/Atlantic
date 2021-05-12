@@ -6,3 +6,6 @@ services:
     build:
       context: .
       dockerfile: src/Services/MasterData/Atlantic.MasterData.API/Dockerfile
+    volumes:
+      - ./src/Services/MasterData/Atlantic.MasterData.API/Data/:/app/Data/
+      

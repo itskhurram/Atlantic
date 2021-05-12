@@ -13,6 +13,9 @@ COPY ["src/Services/MasterData/Atlantic.MasterData.Domain/Atlantic.MasterData.Do
 COPY ["src/Services/MasterData/Atlantic.MasterData.Application/Atlantic.MasterData.Application.csproj", "src/Services/MasterData/Atlantic.MasterData.Application/"]
 COPY ["src/Services/MasterData/Atlantic.MasterData.Infrastructure/Atlantic.MasterData.Infrastructure.csproj", "src/Services/MasterData/Atlantic.MasterData.Infrastructure/"]
 RUN dotnet restore "src/Services/MasterData/Atlantic.MasterData.API/Atlantic.MasterData.API.csproj"
+
+#RUN dotnet ef database update
+
 COPY . .
 WORKDIR "/src/src/Services/MasterData/Atlantic.MasterData.API"
 RUN dotnet build "Atlantic.MasterData.API.csproj" -c Release -o /app/build
