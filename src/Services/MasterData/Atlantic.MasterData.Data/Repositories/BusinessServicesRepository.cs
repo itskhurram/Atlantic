@@ -1,11 +1,11 @@
-﻿using Atlantic.MasterData.Data.Context;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+using Atlantic.MasterData.Data.Context;
 using Atlantic.MasterData.Domain.Interfaces;
 using Atlantic.MasterData.Domain.Models;
+
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 namespace Atlantic.MasterData.Data.Repositories {
     public class BusinessServicesRepository : IBusinessServicesRepository {
         private readonly MasterDataContext _masterDataContext;
